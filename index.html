@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/title-icon.png">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll("a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function(e) {          
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                });    
+                this.classList.add("active");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+       <nav class="navigation">
+            <div class="div-pf">
+                <div class="pf-h1">
+                    <a href="#home"><h1><span class="h1-s">My Port</span><span class="span-h1">folio</span></h1></a>
+                </div>
+                <div class="pf-ul">
+                    <ul class="ul-nav">
+                        <li><a class="a-home" href="#home">Home</a></li>
+                        <li><a class="a-about" href="#about">About</a></li>
+                        <li><a class="a-portofolio" href="#portfolio">Portfolio</a></li>
+                        <li><a class="a-contact" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+       </nav>
+    </header>
+    
+    <section id="home" class="section-home">
+        <div class="content">
+            <h1>Im Fortes Andrew</h1>
+            <h3>Resume portfolio</h3>
+        
+            <div class="btn">
+                <a href="#contact">Let's Talk</a>
+            </div>
+        </div>
+        <div class="me">
+            <img src="images/Untilted.png.jfif" alt="">
+        </div>
+        
+    </section>
+    <section id="about" class="section-about">
+        <div class="container-about">
+            <h1>ABOUT ME</h1>
+            <p>Hello! I'm Andrew fortes passionate web technology enthusiast currently studying to deepen my knowledge and skills in the field. <p>
+            </p> I love exploring the latest web frameworks, designing user-friendly interfaces, and diving into the code that powers the modern web.</p> <br>
+
+            <h1>Achievements</h1>
+
+        </div><br><br>
+        <div class="about-img">
+            <img class="aboutme1" src="images/graduation.jpg" alt="">
+            <img class="aboutme2" src="images/cc2.jpg" alt="">
+            <img class="aboutme3" src="images/honor.jpg" alt="">
+        </div>
+    </section>
+    <section id="portfolio" class="section-project">
+        <div class="div-project">
+            <h1>My Portfolio</h1>
+            <div class="myproject">
+                
+               
+                <div class="education-summary">
+                    <h3>University of the Cordilleras</h3>
+                </div>
+                <p>Bachelor of Science in Information Technology</p>
+                <h4>Web Technology</h4><br>
+                    
+                <h3>Alejo Pacalso National High School</h3>
+                <p>Grade 12-Computer Sysem Servicing NC II</p><br>
+
+                <h3>Timoteo Paez Elementary School</h3>
+
+                
+                
+           
+           
+                
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section-contact">
+        <div class="container-contact">
+            <div class="contactme"> 
+                <h1>Contact Me</h1>
+            </div>
+            <div class="social">
+                <div class="email">
+                    <div class="img-icon">  
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/klEQVR4nO2Y21MbZRjGubeUNqWFhJDdBVJAvbWOVseraqGdhv5XSi1VwikJgSYkBJDitfWq49QLDxwkkLAJOW1O0I5jHYowAo/z7YF8JNlNArQwY96ZdwbC8r3P89vne5mhpqZa1apWtapVLbnuZ3CnJ41kTxo4j21JQ+hJo6tGreQHcM47oWrgHIhDOa1q4F5y76+zFtdTou8Je69UDbT7+Je3A38vnLXIHpW+tfxq0+xa+1fVQMfcBszeddx4GluwJPe3zg31xN7BBz8IYJ08WiZT6hHq+H4TpNunBXT6gi/v8K9Xz1r8Lf8WzO4AOFcELd4UuMl0aQOiidk0zO41fPhj/HdLcm/7rVNP7uPG0yRYux+cJyEKF9tbpgHRxJMszJ51tHtWMt386+DbEv/5yhauuwNSZDzCoXCWtKdcA3ObaJ/bwPXZLMzeGDin/+Dms9S8JbW/+6aEW5IH+OhZVqL+OAJOjgwtnvWUcQdE+sTAE2JgA+bvNtDmE8CNBdExsZK5u74TOW3xt4P/oMMbBONYBeeOFxXOTEhd+hIr4g8NZNE2k0WbLwXOFQJrWyJv4w9LCnsnpp4CPv5pA8zIErgxHuxEQlO8yV3KgBIdSryZiJ/JonU6g1ZfWny9zMgyOryrmbuRndRxxXeFdvDu1BoY2zK48XVw3qSqcMYtiTe5ktoGjkSHpj+dRetUBi2kfRmwrhhM9gBMQwv7nz7PLFlS2K9E/Cc/vwBrWwQzGgTripakrohv1jKgGp1pmb4sXhnGuBMwOdbQPLCITs/qTndop6Tw7vAu3pvhYRpeAutcAzsRL4s6Ed78WGoNA7T4nIFWhb7vqAEykHELMDnDMA75YRqYx83nL1TFf/brn+AIdZsf7HgYHFmRZVJXxBvHBQ0DsvgC+lOF9OmB4hAHMbEKw6Pf0DnF44vgNrVhtvH+bJjETYoMWZGeVEXUjeOSeOOYhgHVi6vQl/8aSoPpgdIw42gUTcMBGPoXoe/7BczwAlodSzANzovUGScPlqzIY1A3jgtoGpNa3UBedNq0okMPdVGUnDEYRngYBgPQW/3QD6yAcfBgyZaZEI5NvYm0U+oSBrQvLk0/f+ghJacAgyMGgz0CvY10TBRzEupN5ExnAobRhLqByqOTosQnD0kZyLDRBPSOBPT2BBrtcTTY4tDb4+Lz+dRNZVAn5ylnahootvOPRCefPhmaT18R75DEN9riaBiJ49pwTGzDqFAxdQN1pqqBk0THmDdQoi+LFw1I4q8NxXB1MCp+bxwTyqZOv83SBiq9uMXo24vQJ+JlA/UDUVwZiIo/L4e6eJZ8nrqBcnY+Jb7g4lJDafEKfVq8aMAaga4/In5NfkeLOjlLOU/VQCU7v/zoUPQHY6hX6FujuNIfge7bCC6T/mZdfEaNegMFQ93AaURH5eIeiY41R18ni7/0SGryWeNITnjuLebOKmmg4p1/zOjoZPGKgbq+MOoehnHxYVh8jqauiCdvSdVAYXTSx975+Re3IDr9uehcIvT7KANfh1H7IIS6vnVcHYoWLABNA6e18xuKRKe+SHQuy9GhxV98EBINXOgN4cJXvPjc4TlaBtjJtJAfHeYUdn6OfqTg4l5S6MvRUejXiuJDeOdLXmzyOXl79dao+j93GV+6i/WmhTey86no6EpEp7Y3R18xQLq2N7Srs0bvqxqoVrWqVa1q/e/qP3Oau9vfx/VtAAAAAElFTkSuQmCC">
+                    </div>
+                    <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">Send Email</a>
+                </div>
+                
+                <div class="media">
+                    <ul>
+                        <li class="fb"><a target="_blank" href="https://www.messenger.com/t/4867037599981803/"><img src="data:image/png;base64,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"></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="textbox">
+                <div class="textname">
+                    <input class="inputbox" type="text" placeholder="Your Name"><br>
+                    <input class="inputbox" type="text" placeholder="Your Email"><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                </div>
+                <div class="submit">
+                    <button class="button-submit">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="ft-container">
+        <div class="div-ft">
+            <div class="h-ft">
+                <h1>Resume 2024 - Portfolio - Fortes Andrew</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
